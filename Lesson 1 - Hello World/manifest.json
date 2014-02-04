@@ -1,0 +1,16 @@
+{
+    "name" : "Chrome Extension Tutorial",
+    "version" : "0.0.1",
+    "description" : "A simple Google chrome extension",
+    "homepage_url": "http://www.macsdickinson.com/",
+    "content_scripts": [{
+        "matches" : [
+            "http://*/*",
+            "https://*/*"
+        ],
+        "js" : [
+			"scripts/content.js"
+		]
+    }],
+    "manifest_version" : 2
+}

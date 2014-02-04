@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Chome Extension Tutorials: Lesson 2 - Popup.html</title>
+    <style>
+	body {
+		min-width: 224px;
+		overflow-x: hidden;
+		margin: 10px;
+	}
+	input[type="text"] {
+		width: 66%;
+	}
+	input[type="button"] {
+		width: 30%;
+	}
+	img {
+		border: 1px solid black;
+		margin: 5px;
+		vertical-align: middle;
+		width: 100px;
+		height: 100px;
+	}
+	.searchbox {
+		margin: 5px;
+	}
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    <script src="scripts/popup.js"></script>
+  </head>
+	<body>
+		<div class="searchbox">
+			<input type="text" id="searchTerm" value="kitten" />
+			<input type="button" id="search" value="Search" />
+		</div>
+		<div id="results"></div>
+	</body>
+</html>
+
