@@ -67,12 +67,12 @@ Once loaded your new extension will show in the list displaying the details from
 Now I'll admit that this isn't doing anything impressive; it's not even doing anything useful, but hopefully it'll give you a basis to build upon later on in the series.
 
    [0]: http://www.macsdickinson.com/javascript/google-chrome-extension-tutorial-hello-world/
-   [1]: http://www.macsdickinsons.com/images/Browser-War1.jpg
+   [1]: http://www.macsdickinson.com/images/Browser-War1.jpg
    [2]: http://www.w3schools.com/browsers/browsers_stats.asp (w3schools browser stats)
    [3]: http://www.w3schools.com/js/ (w3schools)
    [4]: http://www.codecademy.com/ (Code Academy)
    [5]: https://developer.chrome.com/extensions/ (manifest.html)
    [6]: https://developer.chrome.com/extensions/messaging.html (Message Passing)
    [7]: chrome://extensions/ (extensions)
-   [8]: http://www.macsdickinsons.com/images/unpackaged-extension.png
+   [8]: http://www.macsdickinson.com/images/unpackaged-extension.png
    [9]: http://www.macsentom.co.uk "Macs Dickinson"
