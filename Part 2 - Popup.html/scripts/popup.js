@@ -1,10 +1,8 @@
 var imageGenerator = {
-
 	requestImages: function() {
 		var searchTerm = document.getElementById('searchTerm').value;
-	  
 		var req = new XMLHttpRequest();
-		req.open("GET", 'https://api.instagram.com/v1/tags/' + searchTerm + '/media/recent?access_token=51998352.1fb234f.1cff33c9ce24494e92536e353b1b1ee2', true);
+		req.open("GET", 'https://api.instagram.com/v1/tags/' + this.htmlEscape(searchTerm) + '/media/recent?access_token=51998352.1fb234f.1cff33c9ce24494e92536e353b1b1ee2', true);
 		req.onload = this.showImages.bind(this);
 		req.send(null);
 	},
@@ -26,6 +24,15 @@ var imageGenerator = {
 			}
 			document.getElementById('results').appendChild(img);
 		}
+	},
+	htmlEscape: function (str) {
+		return String(str)
+				.replace(/&/g, '&amp;')
+				.replace(/"/g, '&quot;')
+				.replace(/'/g, '&#39;')
+				.replace(/</g, '&lt;')
+				.replace(/>/g, '&gt;')
+				.replace(/ /g, '');
 	}
 };
 
